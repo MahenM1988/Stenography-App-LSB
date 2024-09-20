@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #002d72; /* Navy blue background */
+    color: #ffffff; /* White text color for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    color: #ffffff; /* White text color */
+    text-align: center;
+    margin-bottom: 20px; /* Space below header */
+    padding: 20px; /* Padding around the header */
+}
+
+.logo {
+    max-width: 150px; /* Adjust size of logo */
+    height: auto;
+    margin-top: 20px; /* Space between logo and header text */
+}
+
+h1 {
+    font-size: 2.5em; /* Larger font size for the main heading */
+    color: #ffffff; /* White for the header */
+    margin-top: 10px; 
+}
+
+h2 {
+    font-size: 1.5em; /* Adjusted font size for the secondary heading */
+    color: #d0d0d0; /* Light gray for secondary heading */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto; /* Adjust height to fit content */
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #003f6c; /* Darker blue for cards */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px; /* Set a maximum width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2.card-heading {
+    font-size: 1.25em; /* Font size specific to card heading */
+    color: #d0d0d0; /* Light gray for card heading */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    display: block;
+    width: 100%; /* Make file input take full width */
+    margin: 10px 0;
+    background-color: #003f6c; /* Same as card background */
+    color: #ffffff;
+    border: 1px solid #0056a0;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    background-color: #002d72; /* Navy blue for textarea */
+    color: #ffffff; /* White text color */
+    border: 1px solid #0056a0; /* Lighter blue border */
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+    resize: none; /* Prevent resizing */
+}
+
+button {
+    background-color: #0056a0; /* Medium blue color for buttons */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+    width: 100%; /* Make button take full width of its container */
+}
+
+button:hover {
+    background-color: #003f6c; /* Darker blue on hover */
+}
+
+#extractedMessage {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    color: #d0d0d0; /* Light gray color for footer text */
+    padding: 10px; /* Padding for footer */
+    text-align: center;
+    margin-top: 10px;
+}

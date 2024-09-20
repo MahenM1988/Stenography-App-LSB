@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steganography App, LSB</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Include crypto-js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+    <!-- Your custom JavaScript -->
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Central Intelligence Agency</h1>
+        <h2>Steganography App, LSB</h2>
+        <img src="cia_logo.png" alt="CIA Logo" class="logo">
+    </header>
+    
+    <main class="container">
+        <div class="card">
+            <h2>Embed or Extract Message</h2>
+            <div class="form-group">
+                <label for="imageInput">Select Image to Embed Message:</label>
+                <input type="file" id="imageInput" accept="image/*">
+                <textarea id="messageInput" placeholder="Enter your message here..."></textarea>
+                <button onclick="embedMessage()">Embed Message</button>
+            </div>
+            <div class="form-group">
+                <label for="imageUpload">Select Image to Extract Message:</label>
+                <input type="file" id="imageUpload" accept="image/*">
+                <button onclick="extractMessage()">Extract Message</button>
+            </div>
+            <p id="extractedMessage"></p>
+            <canvas id="canvas" style="display:none;"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <h5>© Mahen Mahindaratne 2024</h5>
+    </footer>
+
+</body>
+</html>
